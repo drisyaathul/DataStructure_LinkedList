@@ -65,5 +65,19 @@ public class LinkedListMain {
         } else
             System.out.println("\nElement '30' is Found.");
 
+        //UC8: Ability to insert 40 after 30 to LinkedList Sequence of 56,30,70.
+        System.out.println("LinkedList Sequence :- ");
+        LinkedList<Integer>linkedList5 = new LinkedList<>();
+        linkedList5.append(56);
+        linkedList5.append(30);
+        linkedList5.append(70);
+        linkedList5.display();
+        boolean isInsert = linkedList5.insert(30,40);
+        if (isInsert)
+            System.out.println("\nElement 40 is Inserted after 30.");
+        else
+            System.out.println("\nElement 40 is NOT Inserted.");
+        System.out.println("LinkedList After Insertion :-");
+        linkedList5.display();
     }
 }
