@@ -57,10 +57,10 @@ public class LinkedList <T> {
     public boolean insert(T searchData, T insertData) {
         //After Searching the node, the new node is inserted next to it.
         Node<T> newNode = new Node<>(insertData);
-        Node<T> searchNode = new Node<>(searchData);
+        Node<T> searchNode = search(searchData);
         if (searchNode != null) {
             newNode.next = searchNode.next;
-            searchNode = newNode;
+            searchNode.next = newNode;
             return true;
         }
         return false;

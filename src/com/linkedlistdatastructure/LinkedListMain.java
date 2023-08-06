@@ -36,8 +36,8 @@ public class LinkedListMain {
         if (isInserted)
             System.out.println("\nElement 30 is Inserted between 56 and 70.");
         else
-            System.out.println("\nElement 30 is not Inserted.");
+            System.out.println("\nElement 30 is NOT Inserted.");
         System.out.println("LinkedList After Insertion :-");
-        linkedList2.display();
+        linkedList3.display();
     }
 }
