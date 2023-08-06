@@ -47,5 +47,15 @@ public class LinkedListMain {
         } else
             System.out.println("\nElement popped is "+poppedData);
         linkedList3.display();
+
+        //UC6: Ability to Delete the Last element in LinkedList.
+        System.out.println("\nLinkedList Sequence:-");
+        linkedList2.display();
+        Integer popData = linkedList2.popLast();
+        if (popData == null){
+            System.out.println("\nLinkedList is Empty");
+        } else
+            System.out.println("\nElement popped is "+popData);
+        linkedList2.display();
     }
 }

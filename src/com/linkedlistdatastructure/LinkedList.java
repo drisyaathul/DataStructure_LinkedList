@@ -74,4 +74,19 @@ public class LinkedList <T> {
         head = head.next;
         return popData;
     }
+
+    public T popLast() {
+        // Deleting the Last Element
+        if (head == null)
+            return null;
+        T popLastData = tail.data; //last element
+        Node<T> temp = head;
+        //Second last element is converting to null using while loop
+        while (temp.next != tail) {
+            temp = temp.next;
+        }
+        temp.next = null;
+        tail = temp;
+        return popLastData;
+    }
 }
