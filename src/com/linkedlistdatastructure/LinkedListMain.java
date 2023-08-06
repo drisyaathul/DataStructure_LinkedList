@@ -1,14 +1,22 @@
 package com.linkedlistdatastructure;
 
-
 public class LinkedListMain {
     public static void main(String[] args) {
-        //UC1: Create Simple Linked List of 56,30,70.
+        //UC1: Create Simple LinkedList of 56,30,70.
         LinkedList<Integer> linkedList = new LinkedList<>();
         linkedList.add(56);
         linkedList.add(30);
         linkedList.add(70);
-        System.out.println("Simple Linked List :-");
+        System.out.println("Simple LinkedList :-");
         linkedList.display();
+
+        //UC2: Ability to create LinkedList by adding 30 and 56 to 70.
+        LinkedList<Integer> linkedList1 = new LinkedList<>();
+        linkedList1.add(70);
+        linkedList1.add(30);
+        linkedList1.add(56);
+        System.out.println();
+        System.out.println("LinkedList Sequence :-");
+        linkedList1.display();
     }
 }
