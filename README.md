@@ -1,1 +1,1 @@
-Data Structure-LinkedList
+Data Structure of LinkedList Using Generics
