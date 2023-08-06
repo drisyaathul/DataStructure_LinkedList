@@ -1,6 +1,5 @@
 package com.linkedlistdatastructure;
 
-import java.util.LinkedList;
 
 public class LinkedListMain {
     public static void main(String[] args) {
@@ -9,6 +8,7 @@ public class LinkedListMain {
         linkedList.add(56);
         linkedList.add(30);
         linkedList.add(70);
-        System.out.println("Simple Linked List => "+linkedList);
+        System.out.println("Simple Linked List :-");
+        linkedList.display();
     }
 }
