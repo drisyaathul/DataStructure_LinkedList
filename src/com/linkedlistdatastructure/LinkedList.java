@@ -89,40 +89,4 @@ public class LinkedList <T> {
         tail = temp;
         return popLastData;
     }
-
-    public void delete(T deleteData) {
-        //Delete the Element.
-        Node node = head;
-        Node prev = null;
-        int size = 0;
-        if (head.data.equals(deleteData)) {
-            head = head.next;
-            size -= 1;
-        }
-        while (!node.data.equals(deleteData)) {
-            prev = node;
-            node = node.next;
-        }
-        node = node.next;
-        prev.next = node;
-        node = null;
-        size -= 1;
-    }
-
-    public void size() {
-        /*
-         * Size of the Linked list:-
-         * create temp node to find the count.
-         * count starts from when temp is equal to head.
-         * By using while loop, count is added till the temp become null(Tail).
-         * print the count value .
-         */
-        Node<T> temp = head;
-        int count = 0;
-        while (temp != null) {
-            temp = temp.next;
-            count++;
-        }
-        System.out.println("\nSize of the LinkedList is " +count);
-    }
 }
