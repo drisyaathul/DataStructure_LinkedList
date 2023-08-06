@@ -1,6 +1,6 @@
 package com.linkedlistdatastructure;
 
-public class LinkedList <T> {
+public class LinkedList <T extends Comparable<T>> {
 
     Node<T> head;
     Node<T> tail;
@@ -18,7 +18,7 @@ public class LinkedList <T> {
             tail = newNode;
         } else
             newNode.next = head;
-            head = newNode;
+        head = newNode;
     }
 
     public void append(T data) {
@@ -33,7 +33,7 @@ public class LinkedList <T> {
             tail = newNode;
         } else
             tail.next = newNode;
-            tail = newNode;
+        tail = newNode;
     }
 
     public void display() {
@@ -54,6 +54,7 @@ public class LinkedList <T> {
         }
         return null; //When temp = null
     }
+
     public boolean insert(T searchData, T insertData) {
         //After Searching the node, the new node is inserted next to it.
         Node<T> newNode = new Node<>(insertData);
@@ -123,6 +124,30 @@ public class LinkedList <T> {
             temp = temp.next;
             count++;
         }
-        System.out.println("\nSize of the LinkedList is " +count);
+        System.out.println("\nSize of the LinkedList is " + count);
+    }
+
+    public void sort() {
+        /*
+         * Creates linked list in ascending order:-
+         */
+        Node<T> temp1 = head;
+        Node<T> temp2;
+        T temp3;
+
+        if (head != tail) {
+            while (temp1 != null) {
+                temp2 = temp1.next;
+                while (temp2 != null) {
+                    if ((temp1.data.compareTo(temp2.data)) > 0) {
+                        temp3 = temp1.data;
+                        temp1.data = temp2.data;
+                        temp2.data = temp3;
+                    }
+                    temp2 = temp2.next;
+                }
+                temp1 = temp1.next;
+            }
+        }
     }
 }

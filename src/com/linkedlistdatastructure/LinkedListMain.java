@@ -80,11 +80,23 @@ public class LinkedListMain {
         System.out.println("LinkedList After Insertion :-");
         linkedList5.display();
 
-        //UC8: Ability to Delete 40 from the LinkedList Sequence of 56,30,40,70 and Show the Size of LinkedList is 3.
+        //UC9: Ability to Delete 40 from the LinkedList Sequence of 56,30,40,70 and Show the Size of LinkedList is 3.
         linkedList5.delete(40);
         System.out.println("\nElement 40 is Deleted.");
         linkedList5.display();
         linkedList5.size();
+
+        //UC10: Ability to create Ordered Linked List in ascending order of data entered sequence 56, 30, 40, and 70.
+        LinkedList<Integer>linkedList6 = new LinkedList<>();
+        linkedList6.append(56);
+        linkedList6.append(30);
+        linkedList6.append(40);
+        linkedList6.append(70);
+        System.out.println("LinkedList Sequence Before Sorting :-");
+        linkedList6.display();
+        linkedList6.sort();
+        System.out.println("\nAfter Sorting :- ");
+        linkedList6.display();
 
     }
 }
