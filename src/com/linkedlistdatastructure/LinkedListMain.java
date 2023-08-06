@@ -80,5 +80,11 @@ public class LinkedListMain {
         System.out.println("LinkedList After Insertion :-");
         linkedList5.display();
 
+        //UC8: Ability to Delete 40 from the LinkedList Sequence of 56,30,40,70 and Show the Size of LinkedList is 3.
+        linkedList5.delete(40);
+        System.out.println("\nElement 40 is Deleted.");
+        linkedList5.display();
+        linkedList5.size();
+
     }
 }
