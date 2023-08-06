@@ -65,4 +65,13 @@ public class LinkedList <T> {
         }
         return false;
     }
+
+    public T pop() {
+        //Deleting the First Element
+        if (head == null)
+            return null;
+        T popData = head.data;
+        head = head.next;
+        return popData;
+    }
 }

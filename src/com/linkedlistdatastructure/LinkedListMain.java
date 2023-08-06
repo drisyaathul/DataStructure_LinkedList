@@ -39,5 +39,13 @@ public class LinkedListMain {
             System.out.println("\nElement 30 is NOT Inserted.");
         System.out.println("LinkedList After Insertion :-");
         linkedList3.display();
+
+        //UC5: Ability to delete the first element in LinkedList.
+        Integer poppedData = linkedList3.pop();
+        if (poppedData == null){
+            System.out.println("\nLinkedList is Empty");
+        } else
+            System.out.println("\nElement popped is "+poppedData);
+        linkedList3.display();
     }
 }
