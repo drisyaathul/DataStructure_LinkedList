@@ -21,6 +21,21 @@ public class LinkedList <T> {
             head = newNode;
     }
 
+    public void append(T data) {
+        /*
+         * New Node is created in the LinkedList. So the head and tail are new node.
+         * If head is not equal to null, then tail.next will be new Node.
+         * And tail will be new Node.
+         */
+        Node<T> newNode = new Node<>(data);
+        if (head == null) {
+            head = newNode;
+            tail = newNode;
+        } else
+            tail.next = newNode;
+            tail = newNode;
+    }
+
     public void display() {
         Node<T> temp = head;
         while (temp != null) {
@@ -28,4 +43,6 @@ public class LinkedList <T> {
             temp = temp.next;
         }
     }
+
+
 }

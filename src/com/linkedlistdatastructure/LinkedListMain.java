@@ -16,7 +16,16 @@ public class LinkedListMain {
         linkedList1.add(30);
         linkedList1.add(56);
         System.out.println();
-        System.out.println("LinkedList Sequence :-");
+        System.out.println("LinkedList by Adding :-");
         linkedList1.display();
+
+        //UC3: Ability to create LinkedList by appending 30 and 70 to 56.
+        LinkedList<Integer>linkedList2 = new LinkedList<>();
+        linkedList2.append(56);
+        linkedList2.append(30);
+        linkedList2.append(70);
+        System.out.println();
+        System.out.println("LinkedList by Appending :-");
+        linkedList2.display();
     }
 }
