@@ -57,5 +57,13 @@ public class LinkedListMain {
         } else
             System.out.println("\nElement popped is "+popData);
         linkedList2.display();
+
+        //UC7: Ability to Search LinkedList to find Node with Value 30.
+        Node<Integer> searchData = linkedList2.search(30);
+        if (searchData == null) {
+            System.out.println("\nElement is Not Found");
+        } else
+            System.out.println("\nElement '30' is Found.");
+
     }
 }
